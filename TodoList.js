@@ -22,14 +22,56 @@ function WhatToDo() {
     let todo=0;
     while (todo!==1 && todo!==2)
     {
+        todo = parseInt(readlineSync.question('enter your awnser'));
+        if(todo===1)
+        {
+            validate();
 
-        todo = readlineSync.question('enter your awnser');
+        }
+        else if(todo===2)
+        {
+            add();
+        }
+
+
     }
 
 
+    console.log("here is the new todolist");
 
-    console.log(todo);
+
+
+    console.log(Todolist);
+
 }
+
+
+
+function add() {
+    console.log("what task do you want to add?");
+    let toadd = readlineSync.question();
+
+    Todolist.push(toadd);
+
+
+}
+
+function validate() {
+    console.log("witch task is done?")
+
+    for(let i =0; i<Todolist.length;i++)
+    {
+        console.log((i+1)+" "+Todolist[i]);
+    }
+
+    let tovalidate= parseInt(readlineSync.question('enter your awnser'));
+    Todolist.splice(tovalidate-1)
+
+
+
+
+}
+
 
 
 

@@ -3,6 +3,7 @@
 in order to use the application, you need to run this:
 
 npm install readline-sync
+npm install fs
 
 
 
