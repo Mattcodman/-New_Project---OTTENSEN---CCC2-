@@ -21,8 +21,10 @@ function WhatToDo() {
     console.log("2- add a task")
     let todo=0;
     while (todo!==1 && todo!==2)
+    {
 
-         todo = readlineSync.question('enter your awnser');
+        todo = readlineSync.question('enter your awnser');
+    }
 
 
 
