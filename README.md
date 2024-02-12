@@ -1,17 +1,15 @@
 # -New_Project---OTTENSEN---CCC2-
 
-in order to use the application, you need to run this:
+## How to Build ?
+
+In order to use the application, you need to run this:
 
 npm install readline-sync
+
 npm install fs
 
-# project: todolist
+Now you should be good !
 
-we have a todolist that you can update, and validate task, but you can not permanently change it
+# project: Todolist
 
-
-
-
-
-
-
+We have a todolist that you can update, and validate task, but you can not permanently change it
